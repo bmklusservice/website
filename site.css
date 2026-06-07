@@ -91,6 +91,25 @@ nav a:focus-visible {
   color: var(--ink);
 }
 
+.language-toggle {
+  min-width: 58px;
+  min-height: 34px;
+  padding: 6px 10px;
+  color: var(--ink);
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.language-toggle:hover,
+.language-toggle:focus-visible {
+  border-color: var(--ink);
+}
+
 .button,
 .button-secondary {
   display: inline-flex;
