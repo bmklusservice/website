@@ -545,6 +545,21 @@ h3 {
   overflow-wrap: anywhere;
 }
 
+.contact-details {
+  display: grid;
+  gap: 8px;
+  margin-top: 22px;
+  color: var(--muted);
+  font-size: clamp(1rem, 1.4vw, 1.12rem);
+}
+
+.contact-details a {
+  color: var(--ink);
+  font-weight: 700;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
 .contact-form {
   display: grid;
   gap: 14px;
