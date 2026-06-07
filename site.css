@@ -567,6 +567,21 @@ h3 {
   background: var(--frame);
 }
 
+.contact-card {
+  align-content: start;
+}
+
+.contact-card p:not(.eyebrow) {
+  max-width: 560px;
+  color: var(--muted);
+  overflow-wrap: break-word;
+}
+
+.contact-card .button {
+  width: fit-content;
+  margin-top: 8px;
+}
+
 label {
   display: grid;
   gap: 6px;
@@ -778,7 +793,8 @@ footer a {
   }
 
   .contact-section .lead,
-  .contact-option p {
+  .contact-option p,
+  .contact-card p:not(.eyebrow) {
     max-width: 31ch;
     overflow-wrap: break-word;
   }
