@@ -92,22 +92,41 @@ nav a:focus-visible {
 }
 
 .language-toggle {
-  min-width: 58px;
-  min-height: 34px;
-  padding: 6px 10px;
-  color: var(--ink);
-  background: transparent;
+  display: inline-flex;
+  padding: 3px;
+  background: var(--frame);
   border: 1px solid var(--line);
   border-radius: 4px;
+}
+
+.language-toggle button {
+  min-width: 38px;
+  min-height: 28px;
+  padding: 4px 8px;
+  color: var(--muted);
+  background: transparent;
+  border: 0;
+  border-radius: 3px;
   font: inherit;
-  font-size: 0.82rem;
+  font-size: 0.78rem;
   font-weight: 700;
   cursor: pointer;
 }
 
-.language-toggle:hover,
-.language-toggle:focus-visible {
-  border-color: var(--ink);
+.language-toggle button.is-active {
+  color: #ffffff;
+  background: var(--green);
+  box-shadow: 0 1px 3px rgba(24, 23, 22, 0.18);
+}
+
+.language-toggle button:hover,
+.language-toggle button:focus-visible {
+  color: var(--ink);
+}
+
+.language-toggle button.is-active:hover,
+.language-toggle button.is-active:focus-visible {
+  color: #ffffff;
 }
 
 .button,

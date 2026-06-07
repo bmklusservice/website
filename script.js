@@ -188,12 +188,10 @@ function applyLanguage(language) {
 
   translateFormLabels(language);
 
-  document.querySelectorAll(".language-toggle").forEach((button) => {
-    button.textContent = language === "nl" ? "EN" : "NL";
-    button.setAttribute(
-      "aria-label",
-      language === "nl" ? "Switch to English" : "Schakel naar Nederlands"
-    );
+  document.querySelectorAll(".language-toggle button").forEach((button) => {
+    const isActive = button.dataset.language === language;
+    button.classList.toggle("is-active", isActive);
+    button.setAttribute("aria-pressed", String(isActive));
   });
 }
 
@@ -203,10 +201,14 @@ function setupLanguageToggle() {
     return;
   }
 
-  const button = document.createElement("button");
-  button.className = "language-toggle";
-  button.type = "button";
-  header.append(button);
+  const toggle = document.createElement("div");
+  toggle.className = "language-toggle";
+  toggle.setAttribute("aria-label", "Language");
+  toggle.innerHTML = `
+    <button type="button" data-language="en">EN</button>
+    <button type="button" data-language="nl">NL</button>
+  `;
+  header.append(toggle);
 
   const requestedLanguage = new URLSearchParams(window.location.search).get("lang");
   const savedLanguage =
@@ -217,8 +219,10 @@ function setupLanguageToggle() {
         : "en";
   applyLanguage(savedLanguage);
 
-  button.addEventListener("click", () => {
-    applyLanguage(document.documentElement.lang === "nl" ? "en" : "nl");
+  toggle.querySelectorAll("button").forEach((button) => {
+    button.addEventListener("click", () => {
+      applyLanguage(button.dataset.language);
+    });
   });
 }
 
