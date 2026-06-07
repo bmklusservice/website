@@ -3,11 +3,11 @@
 :root {
   --paper: #f6f2eb;
   --ink: #181716;
-  --muted: #68645d;
+  --muted: #5d5851;
   --line: #d7d0c5;
   --hero: #d3d0ca;
   --frame: #eee9e1;
-  --green: #6d806f;
+  --green: #5f725f;
   --red: #6f2528;
   --max: 1180px;
 }
@@ -497,7 +497,7 @@ h3 {
 
 .project-copy p:not(.eyebrow) {
   max-width: 430px;
-  color: var(--muted);
+  color: #2f2d2a;
   font-size: clamp(1rem, 1.4vw, 1.12rem);
 }
 

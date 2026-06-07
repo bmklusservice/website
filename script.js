@@ -92,7 +92,7 @@ const translations = {
   "Designed a cabinet above a staircase to make use of empty space, with a revolving section so you do not have to reach over the rail.": "Ontwerp voor een kast boven een trap om lege ruimte te benutten, met een draaiend deel zodat je niet over de leuning hoeft te reiken.",
   "Custom-made pine wood plinths made to fit an odd-shaped kitchen.": "Maatwerkplinten van grenenhout, passend gemaakt voor een keuken met een afwijkende vorm.",
   "Roof renovation to avoid leakage during heavy rainfall in Spain.": "Dakrenovatie om lekkage bij zware regenval in Spanje te voorkomen.",
-  "Removed all rust from the inside and outside of an old iron sailboat and made it look like new.": "Alle roest aan de binnen- en buitenkant van een oude ijzeren zeilboot verwijderd en de boot weer netjes afgewerkt.",
+  "Removed all rust from the inside and outside of an old steel sailboat and made it look like new.": "Alle roest aan de binnen- en buitenkant van een oude stalen zeilboot verwijderd en de boot weer netjes afgewerkt.",
   "For BM Klusservice, portfolio questions, or design collaborations, send a short message.": "Stuur een kort bericht voor BM Klusservice, vragen over het portfolio of ontwerpsamenwerkingen.",
   "Send the location, a few photos, what needs to be made or fixed, and timing.": "Stuur de locatie, een paar foto's, wat er gemaakt of gerepareerd moet worden en de gewenste planning.",
   "Send the project context, goal, deadline, and what kind of help you need.": "Stuur de projectcontext, het doel, de deadline en welke hulp je nodig hebt.",
