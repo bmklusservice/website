@@ -380,11 +380,22 @@ h3 {
   gap: 18px;
 }
 
+.preview-images {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+}
+
 .image-pair img {
   max-height: 520px;
   padding: 10px;
   background: var(--frame);
   object-fit: contain;
+}
+
+.preview-images img {
+  aspect-ratio: 3 / 4;
+  max-height: 440px;
+  object-fit: cover;
 }
 
 .work-section {
@@ -512,6 +523,7 @@ h3 {
 
 .contact-option p {
   color: var(--muted);
+  overflow-wrap: anywhere;
 }
 
 .contact-form {
@@ -564,12 +576,57 @@ footer a {
   text-decoration: none;
 }
 
+[data-lightbox] {
+  cursor: zoom-in;
+  transition: opacity 160ms ease;
+}
+
+[data-lightbox]:hover {
+  opacity: 0.88;
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: grid;
+  place-items: center;
+  padding: 72px clamp(16px, 4vw, 48px) 32px;
+  background: rgba(16, 15, 14, 0.9);
+}
+
+.lightbox[hidden] {
+  display: none;
+}
+
+.lightbox img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: calc(100vh - 112px);
+  object-fit: contain;
+}
+
+.lightbox button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  min-height: 40px;
+  padding: 8px 12px;
+  color: var(--paper);
+  background: transparent;
+  border: 1px solid rgba(244, 241, 235, 0.7);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 @media (max-width: 900px) {
   .home-hero,
   .about-hero,
   .path-grid,
   .content-grid,
   .contact-grid,
+  .preview-images,
   .project-row,
   .project-row-reverse,
   .project-media.two-up,
@@ -658,6 +715,46 @@ footer a {
   .path-section,
   .content-section,
   .contact-section {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .contact-section {
+    overflow-x: hidden;
+    padding-right: 28px;
+  }
+
+  .contact-grid,
+  .contact-grid > *,
+  .contact-option,
+  .contact-form {
+    width: auto;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .contact-grid {
+    max-width: calc(100vw - 46px);
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  .contact-section h1 {
+    font-size: clamp(2.45rem, 12vw, 3rem);
+  }
+
+  .contact-section .lead,
+  .contact-option p {
+    max-width: 31ch;
+    overflow-wrap: break-word;
+  }
+
+  .contact-option h3 {
+    max-width: 28ch;
+  }
+
+  .contact-option,
+  .contact-form {
     padding-left: 18px;
     padding-right: 18px;
   }
