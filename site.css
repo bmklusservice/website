@@ -127,24 +127,6 @@ nav a:focus-visible {
   object-fit: cover;
 }
 
-.service-hero {
-  min-height: calc(100vh - 112px);
-  padding-top: clamp(24px, 4vh, 44px);
-  padding-bottom: clamp(24px, 4vh, 44px);
-}
-
-.service-hero img {
-  width: 100%;
-  min-height: 0;
-  max-height: min(72vh, 620px);
-  object-fit: contain;
-  background: var(--frame);
-}
-
-.service-hero .service-heading {
-  font-size: clamp(2.8rem, 5.2vw, 5rem);
-}
-
 .about-hero {
   display: grid;
   grid-template-columns: minmax(220px, 360px) minmax(0, 620px);
@@ -617,14 +599,6 @@ footer a {
 
   .home-hero img {
     min-height: 0;
-    max-height: none;
-  }
-
-  .service-hero {
-    min-height: 0;
-  }
-
-  .service-hero img {
     max-height: none;
   }
 
