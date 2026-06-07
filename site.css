@@ -243,7 +243,6 @@ h3 {
 
 .main-gateway .bm-card img {
   padding: clamp(26px, 5vw, 60px);
-  background: #596b5d;
   object-fit: contain;
 }
 
