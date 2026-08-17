@@ -851,6 +851,20 @@ footer a {
     min-height: 0;
   }
 
+  .project-media.two-up,
+  .project-media.three-up,
+  .project-media.four-up,
+  .project-media.two-by-two {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .project-media.two-up img,
+  .project-media.three-up img,
+  .project-media.four-up img,
+  .project-media.two-by-two img {
+    aspect-ratio: 4 / 3;
+  }
+
   .path-card div {
     min-height: 76px;
   }
