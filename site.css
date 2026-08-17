@@ -331,10 +331,6 @@ h3 {
   object-fit: contain;
 }
 
-.bm-card-collage {
-  display: none;
-}
-
 .main-gateway .portfolio-card img {
   object-position: center bottom;
 }
@@ -853,40 +849,6 @@ footer a {
 
   .path-card {
     min-height: 0;
-  }
-
-  .project-media.two-up,
-  .project-media.three-up,
-  .project-media.four-up,
-  .project-media.two-by-two {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .project-media.two-up img,
-  .project-media.three-up img,
-  .project-media.four-up img,
-  .project-media.two-by-two img {
-    aspect-ratio: 4 / 3;
-  }
-
-  .main-gateway .bm-card .bm-card-logo {
-    display: none;
-  }
-
-  .main-gateway .bm-card .bm-card-collage {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 6px;
-    padding: 8px;
-    background: #e1dacc;
-  }
-
-  .main-gateway .bm-card .bm-card-collage img {
-    width: 100%;
-    height: clamp(118px, 34vw, 170px);
-    padding: 0;
-    background: transparent;
-    object-fit: cover;
   }
 
   .path-card div {
