@@ -518,6 +518,10 @@ h3 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
+.project-media.two-by-two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .project-media.single {
   max-width: 680px;
 }
@@ -540,6 +544,10 @@ h3 {
 
 .project-media.four-up img {
   aspect-ratio: 3 / 4;
+}
+
+.project-media.two-by-two img {
+  aspect-ratio: 4 / 3;
 }
 
 .contact-grid {
@@ -699,7 +707,8 @@ footer a {
   .project-row-reverse,
   .project-media.two-up,
   .project-media.three-up,
-  .project-media.four-up {
+  .project-media.four-up,
+  .project-media.two-by-two {
     grid-template-columns: 1fr;
   }
 
