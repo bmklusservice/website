@@ -718,6 +718,14 @@ footer a {
     grid-row: auto;
   }
 
+  .preview-images {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .preview-images img {
+    aspect-ratio: 4 / 3;
+  }
+
   .project-media.two-up,
   .project-media.three-up,
   .project-media.four-up,
